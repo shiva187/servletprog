@@ -82,3 +82,31 @@ doPost() Method:
 
 For simplicity in this project, the doPost() method merely calls doGet(). In a production application, POST requests are typically used for data submission (e.g., adding or updating records) for better security and to handle larger
 data payloads.
+
+2. Frontend HTML Form
+   
+The index.html (or similar) file contains a simple form to collect the student's roll number.
+
+```bash
+<form action="MyResultServlet" method="get">
+    Enter your Roll number <input type="text" name="id"><br>
+    <input type="submit" value="Get My Result">
+</form>
+```
+
+The action="MyResultServlet" attribute directs the form submission to our servlet.
+
+method="get" indicates that the form data (the roll number) will be appended to the URL as a query parameter.
+
+### Core Concepts Covered
+
+Servlets: Fundamentals of building dynamic web applications with Java EE, handling HTTP requests, and generating responses.
+
+JDBC (Java Database Connectivity): The standard API for connecting Java applications to relational databases, covering driver loading, connection establishment, statement execution, and result processing.
+
+PreparedStatement: Essential for secure database interactions, using parameterized queries to prevent SQL Injection attacks.
+
+Oracle Database: Practical usage of Oracle for data storage, including DDL (Data Definition Language) for table creation and DML (Data Manipulation Language) for data insertion and querying.
+
+HTTP GET vs. POST: Understanding the differences and appropriate use cases for these common HTTP methods in web applications.
+

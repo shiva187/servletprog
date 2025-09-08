@@ -165,3 +165,28 @@ HTTP GET vs. POST: Understanding the differences and appropriate use cases for t
 - The servlet will fetch and display the corresponding result from the database.  
 
 
+## 📚 Learning Outcomes  
+
+By working through this project, you will gain a practical understanding of:  
+
+- Integrating **Java Servlets** with **JDBC** for web application development.  
+- Interacting with an **Oracle Database** from a Java application.  
+- Implementing secure database queries using **PreparedStatement**.  
+- Understanding the **lifecycle** and request handling of Servlets.  
+- Learning basic web development concepts including **HTML forms** and **HTTP methods (GET/POST)**.  
+
+---
+
+## ✨ Future Enhancements  
+
+- **Grade Calculation:** Add logic to calculate and display grades based on marks.  
+- **POST Method for Input:** Refactor the form and servlet to use the `POST` method for better security, especially if expanding to include sensitive data.  
+- **Admin Panel:** Develop an administrative interface for adding, updating, or deleting student results.  
+- **Modern Frontend:** Integrate with **JSP, React, Angular, or Vue.js** for a more dynamic and responsive user interface.  
+- **Cloud Deployment:** Deploy the application on cloud platforms like **Heroku, AWS, or GCP**, connecting to a remote database service.  
+
+---
+
+## 📝 Author  
+
+👤 **Shiva Kumar**  

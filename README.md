@@ -2,7 +2,8 @@
 
 # 3 tire architecture 
 
-<img> 
+<img src = "blog-3-tier-application.webp" >
+
 This project is a mini-web application demonstrating how to build a Java Servlet-based system to fetch and display student results stored in an Oracle Database using JDBC. It covers the essential full-stack flow, from a simple HTML frontend to a Java backend interacting with a relational database.
 
 ## 🚀 Overview

@@ -55,3 +55,30 @@ INSERT INTO eceresult VALUES (3, 'C');
 COMMIT;
 
 ```
+
+### Backend Code Explanation
+
+1. MyResultServlet.java
+
+This Servlet is the core of the backend logic.
+
+@WebServlet("/MyResultServlet"): This annotation maps the servlet to the URL /MyResultServlet, making it accessible via web requests.
+
+doGet() Method:
+
+Retrieves the id (roll number) parameter from the incoming HTTP request.
+
+Loads the Oracle JDBC driver (Class.forName("oracle.jdbc.OracleDriver")).
+
+Establishes a connection to the Oracle Database using DriverManager.getConnection().
+
+Prepares and executes a SQL SELECT query using PreparedStatement to retrieve student data based on the provided roll number. This prevents SQL injection vulnerabilities.
+
+Processes the ResultSet to extract student name and marks.
+
+Generates an HTML response containing the student's result or a "not found" message, which is then sent back to the client.
+
+doPost() Method:
+
+For simplicity in this project, the doPost() method merely calls doGet(). In a production application, POST requests are typically used for data submission (e.g., adding or updating records) for better security and to handle larger
+data payloads.

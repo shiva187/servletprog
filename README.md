@@ -112,37 +112,56 @@ Oracle Database: Practical usage of Oracle for data storage, including DDL (Data
 
 HTTP GET vs. POST: Understanding the differences and appropriate use cases for these common HTTP methods in web applications.
 
-### How to Run the Project
 
---> Database setup 
 
-Install Oracle Database: Ensure you have an Oracle Database (e.g., Oracle XE) installed and running.
 
-Database Setup: Execute the SQL commands provided in the "Database Setup" section to create the eceresult table and insert sample data.
+## How to Run the Project
 
---> create html file :
+## 1. Database Setup
 
-** note : in form use the servlet name as the same name that you are going to create a java servlet class 
-select method and use same in servlet file. 
+- **Install Oracle Database:**  
+  Ensure that Oracle Database (for example, Oracle XE) is installed and running on your system.
 
---> creation of servlet class 
+- **Create the Database Table:**  
+  Execute the SQL commands provided in the "Database Setup" section to create the `eceresult` table and insert sample data.
 
-files --> dynamicweb project
+---
 
-if you are new and not yet installed any server then select a server over there and click on istall
+## 2. Create the HTML File
 
-Install Tomcat: Set up Apache Tomcat (or another Java EE server) in your IDE (e.g., Eclipse, IntelliJ IDEA).
+- **Form Configuration:**  
+  - In the HTML form, use the same servlet name as the one you are going to create in the Java Servlet class.  
+  - Select the appropriate method (`GET` or `POST`) and ensure it matches the method implemented in the servlet.
 
-use the same name you have used in html for creation of the file , this file will extends the properties of servlet and we will be having doGET and doPOST methods in this .
+---
 
-Add JDBC Driver: Download the ojdbc8.jar (or appropriate version for your Java/Oracle setup) and add it to your project's WEB-INF/lib directory. This driver is essential for connecting Java to Oracle.
+## 3. Create the Servlet Class
 
-then add jdbc driver in both the places 
+- **Dynamic Web Project:**  
+  - In your IDE, create a **Dynamic Web Project**.  
+  - If you are new and have not installed any server, select a server at this stage and proceed with the installation.
 
-1st right click on src --> build path --> configure build path --> libreries --> class path --> add external jar file --> select jar file from local 
+- **Install Tomcat:**  
+  - Set up **Apache Tomcat** (or another Java EE server) in your IDE (e.g., Eclipse, IntelliJ IDEA).
 
-2nd right click on main directory --> build path --> configure build path --> libreries --> class path --> add external jar file --> select jar file from local 
+- **Servlet File Creation:**  
+  - Use the same servlet name that you provided in the HTML form.  
+  - This file extends the properties of `HttpServlet` and contains the `doGet()` and `doPost()` methods.
 
-->now run the result.html file you will be navigated or a web page will be pop uped enter the any value you will be getting reultent result mapped to that number in database 
+- **Add JDBC Driver:**  
+  - Download the `ojdbc8.jar` (or the appropriate version for your Java/Oracle setup).  
+  - Add it to your project’s `WEB-INF/lib` directory. This driver is essential for connecting Java to Oracle.
+
+- **Configure JDBC Driver in Build Path (Two Steps):**  
+  1. Right-click on the **src** folder → Build Path → Configure Build Path → Libraries → Classpath → Add External JARs → select the JAR file.  
+  2. Right-click on the **main project directory** → Build Path → Configure Build Path → Libraries → Classpath → Add External JARs → select the JAR file.
+
+---
+
+## 4. Run the Application
+
+- Run the `result.html` file.  
+- A web page will open where you can enter a roll number.  
+- The servlet will fetch and display the corresponding result from the database.  
 
 

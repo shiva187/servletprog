@@ -2,6 +2,7 @@
 
 # 3 tire architecture 
 
+<img> 
 This project is a mini-web application demonstrating how to build a Java Servlet-based system to fetch and display student results stored in an Oracle Database using JDBC. It covers the essential full-stack flow, from a simple HTML frontend to a Java backend interacting with a relational database.
 
 ## 🚀 Overview
@@ -109,4 +110,38 @@ PreparedStatement: Essential for secure database interactions, using parameteriz
 Oracle Database: Practical usage of Oracle for data storage, including DDL (Data Definition Language) for table creation and DML (Data Manipulation Language) for data insertion and querying.
 
 HTTP GET vs. POST: Understanding the differences and appropriate use cases for these common HTTP methods in web applications.
+
+### How to Run the Project
+
+--> Database setup 
+
+Install Oracle Database: Ensure you have an Oracle Database (e.g., Oracle XE) installed and running.
+
+Database Setup: Execute the SQL commands provided in the "Database Setup" section to create the eceresult table and insert sample data.
+
+--> create html file :
+
+** note : in form use the servlet name as the same name that you are going to create a java servlet class 
+select method and use same in servlet file. 
+
+--> creation of servlet class 
+
+files --> dynamicweb project
+
+if you are new and not yet installed any server then select a server over there and click on istall
+
+Install Tomcat: Set up Apache Tomcat (or another Java EE server) in your IDE (e.g., Eclipse, IntelliJ IDEA).
+
+use the same name you have used in html for creation of the file , this file will extends the properties of servlet and we will be having doGET and doPOST methods in this .
+
+Add JDBC Driver: Download the ojdbc8.jar (or appropriate version for your Java/Oracle setup) and add it to your project's WEB-INF/lib directory. This driver is essential for connecting Java to Oracle.
+
+then add jdbc driver in both the places 
+
+1st right click on src --> build path --> configure build path --> libreries --> class path --> add external jar file --> select jar file from local 
+
+2nd right click on main directory --> build path --> configure build path --> libreries --> class path --> add external jar file --> select jar file from local 
+
+->now run the result.html file you will be navigated or a web page will be pop uped enter the any value you will be getting reultent result mapped to that number in database 
+
 

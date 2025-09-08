@@ -22,3 +22,36 @@ Oracle Database: Relational database used for persistent storage of student resu
 Apache Tomcat (or any Java EE Server): To deploy and run the Servlet application.
 
 HTML: For the simple frontend form to accept user input.
+
+## creation of orale database :
+
+install oracle for windows  --> create your password 
+
+search for sql command line interface 
+
+then enter :
+
+```bash
+system connect
+```
+
+enter your password *******
+
+then start creating and adding elements into the table 
+
+```bash
+
+CREATE TABLE eceresult (
+    id NUMBER ,
+    grade VARCHAR2(50),
+   
+);
+```
+adding data into table 
+```bash
+INSERT INTO eceresult VALUES (1, 'A');
+INSERT INTO eceresult VALUES (2, 'B');
+INSERT INTO eceresult VALUES (3, 'C');
+COMMIT;
+
+```
